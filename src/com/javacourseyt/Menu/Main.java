@@ -14,10 +14,11 @@ public class Main {
             System.out.println("\t2 - Swap Variables");
             System.out.println("\t3 - User Input");
             System.out.println("\t4 - Expressions");
+            System.out.println("\t5 - GUI");
             System.out.println("\t999 - Exit");
             System.out.print("Choice: ");
 
-            choice = Common.tryParse(scanner.next());
+            choice = Common.tryParseInt(scanner.next());
 
             // System.out.println(Common.ANSI_NEWLINE);
 
@@ -38,7 +39,11 @@ public class Main {
                     System.out.println("Calling Expressions");
                     com.javacourseyt.Expressions.Main.main(null);
                     break;
-                
+                case 5:
+                    System.out.println("Calling GUI");
+                    com.javacourseyt.GUI.Main.main(null);
+                    break;
+                //
                 
                 case 999:
                     System.out.println(Common.ANSI_GREEN + "We hope you had a good time!\nPlease come again soon!" + Common.ANSI_RESET);
