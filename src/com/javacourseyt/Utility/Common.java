@@ -11,7 +11,7 @@ public class Common {
             return Integer.parseInt(text);
         } catch (NumberFormatException e) {
             System.out.println(ANSI_NEWLINE + ANSI_RED + e + ANSI_RESET);
-            System.out.println(ANSI_RED + "Invalid selection.  Must be a number." + ANSI_RESET);
+            System.out.println(ANSI_RED + "Invalid input.  Must be a number." + ANSI_RESET);
             return 0;
         }
     }
