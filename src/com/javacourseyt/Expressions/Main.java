@@ -33,7 +33,5 @@ public class Main {
         } else {
             System.out.println(Common.ANSI_RED + "No we cannot!" + Common.ANSI_RESET);
         }
-
     }
-    
 }
