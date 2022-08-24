@@ -1,5 +1,6 @@
 package com.javacourseyt.Expressions;
 
+import javax.swing.plaf.basic.BasicComboBoxUI.ComboBoxLayoutManager;
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 import com.javacourseyt.Utility.Common;
@@ -31,9 +32,9 @@ public class Main {
         System.out.format("Can we make even teams? [MOD] %d" + Common.ANSI_NEWLINE, friends);
 
         if (friends == 0) {
-            System.out.println("Yes we can!");
+            System.out.println(Common.ANSI_GREEN + "Yes we can!" + Common.ANSI_RESET);
         } else {
-            System.out.println("No we cannot!");
+            System.out.println(Common.ANSI_RED + "No we cannot!" + Common.ANSI_RESET);
         }
 
     }
