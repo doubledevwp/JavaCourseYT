@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Hello " + name);
 
         System.out.print("How old are you? ");
-        int age = Common.tryParse(scanner.next());
+        int age = Common.tryParseInt(scanner.next());
         System.out.println("You're " + age + " years old!");
         
         if (age < 18) {
